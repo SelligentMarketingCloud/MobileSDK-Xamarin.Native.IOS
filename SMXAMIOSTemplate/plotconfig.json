@@ -1,0 +1,6 @@
+{
+    "publicToken": "YOUR PUBLICTOKEN",
+    "enableOnFirstRun": true,
+    "maxRegionsMonitored": 20,
+    "automaticallyAskLocationPermission": true
+}
