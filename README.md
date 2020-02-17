@@ -22,7 +22,8 @@ There are two ways you can use the Selligent Xamarin iOS binding library:
 	1.	Select the checkbox next to the binding library project you just added and click "Ok"
 	1.	Build the SelligentMobileiOS project
 
-After following one of these set of steps the *SelligentMobile_iOS_Xamarin.dll* will be added to your solution and you can start using it in your code by using "Com.Selligent.Sdk" 
+After following one of these set of steps the *SelligentMobile_iOS_Xamarin.dll* will be added to your solution and you can start using it in your code by using "Com.Selligent.Sdk"
+(IntelliSense errors about not recognizing "SelligentMobileiOS" are fixed by referencing the DLL instead of the binding project)
 
 ## 2. Documentation
 
