@@ -140,17 +140,12 @@ namespace testApp
             {
                 NSDictionary dict = (NSDictionary)notif.UserInfo;
                 NSArray inAppData = (NSArray)dict.ObjectForKey(SelligentMobileiOS.Constants.kSMNotification_Data_InAppMessage);
+                
                 for (uint i = 0; i < inAppData.Count; i++)
                 {
                     NSDictionary data = inAppData.GetItem<NSDictionary>(i);
-                    var alertController = UIAlertController.Create(data.ValueForKey(new NSString("title")).ToString(), data.ValueForKey(new NSString("id")).ToString(), UIAlertControllerStyle.Alert);
-                    //Add Action
-                    alertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
-                    // Present Alert
-                    Window.RootViewController.PresentViewController(alertController, true, null);
+                    SMManager.SharedInstance().DisplayNotificationID(data.ValueForKey(new NSString("id")).ToString());
                 }
-               
-
             }
             catch (Exception e)
             {
