@@ -1,3 +1,5 @@
+⛔️ DEPRECATED - No further updates will be delivered
+
 # MobileSDK-Xamarin
 
 ## 1. Installation
